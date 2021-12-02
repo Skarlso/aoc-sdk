@@ -36,7 +36,7 @@ func DownloadInput(year, day int) (string, error) {
 		return "", DownloadError{StatusCode: resp.StatusCode}
 	}
 
-	targetDir := fmt.Sprintf("days/day%d", day)
+	targetDir := fmt.Sprintf("day%02d", day)
 	targetFile := fmt.Sprintf("%s/input.txt", targetDir)
 
 	ensurePath(targetDir)
