@@ -23,7 +23,7 @@ func init() {
 		displayHelpThenExit()
 	}
 	skipCmd := flag.NewFlagSet("", flag.ExitOnError)
-	skipCmd.IntVar(&year, "y", 2020, "the current year")
+	skipCmd.IntVar(&year, "y", 2021, "the current year")
 	skipCmd.IntVar(&day, "d", -1, "the current day")
 	skipCmd.StringVar(&solution, "s", "", "the solution")
 	skipCmd.IntVar(&part, "p", -1, "part of the day")
